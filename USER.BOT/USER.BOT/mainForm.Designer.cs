@@ -39,6 +39,7 @@
             this.buttonMassComment = new System.Windows.Forms.Button();
             this.buttonFindComments = new System.Windows.Forms.Button();
             this.buttonGDZ = new System.Windows.Forms.Button();
+            this.FindPostByWord = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,11 +142,22 @@
             this.buttonGDZ.Text = "ГДЗ бот";
             this.buttonGDZ.UseVisualStyleBackColor = true;
             // 
+            // FindPostByWord
+            // 
+            this.FindPostByWord.Location = new System.Drawing.Point(655, 200);
+            this.FindPostByWord.Name = "FindPostByWord";
+            this.FindPostByWord.Size = new System.Drawing.Size(256, 23);
+            this.FindPostByWord.TabIndex = 19;
+            this.FindPostByWord.Text = "button1";
+            this.FindPostByWord.UseVisualStyleBackColor = true;
+            this.FindPostByWord.Click += new System.EventHandler(this.FindPostByWord_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(923, 380);
+            this.Controls.Add(this.FindPostByWord);
             this.Controls.Add(this.buttonGDZ);
             this.Controls.Add(this.buttonFindComments);
             this.Controls.Add(this.buttonMassComment);
@@ -179,6 +191,7 @@
         private System.Windows.Forms.Button buttonMassComment;
         private System.Windows.Forms.Button buttonFindComments;
         private System.Windows.Forms.Button buttonGDZ;
+        private System.Windows.Forms.Button FindPostByWord;
     }
 }
 

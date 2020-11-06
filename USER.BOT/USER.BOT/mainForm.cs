@@ -71,5 +71,13 @@ namespace USER.BOT
             frm.user_id = user_id;
             frm.Show();
         }
+
+        private void FindPostByWord_Click(object sender, EventArgs e)
+        {
+            Search_For_Posts S = new Search_For_Posts();
+            S.access_token = this.access_token;
+            S.user_id = user_id;
+            S.Show();
+        }
     }
 }
